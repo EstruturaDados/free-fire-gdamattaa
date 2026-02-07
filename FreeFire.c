@@ -112,7 +112,6 @@ void removerItem() {
     char nome[30];
 
     printf("Digite o nome do item a remover: ");
-    limparBuffer();
     fgets(nome, sizeof(nome), stdin);
     nome[strcspn(nome, "\n")] = 0;
 
@@ -139,7 +138,6 @@ void procurarItem() {
     char nome[30];
 
     printf("Digite o nome do item para buscar: ");
-    limparBuffer();
     fgets(nome, sizeof(nome), stdin);
     nome[strcspn(nome, "\n")] = 0;
 
